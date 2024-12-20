@@ -1,1 +1,1 @@
-"# Grafice-Armonice" 
+# Grafice Armonice
