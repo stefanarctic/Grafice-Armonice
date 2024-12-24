@@ -40,3 +40,31 @@ html, body {
     height: 3000px; /* Dimensiune mare pentru a crea derulare verticală */
   }
   
+  .audio-play-button {
+    all: unset;
+    position: fixed;
+    right: 90px;
+    width: 125px;
+    height: 70px;
+    top: 10px;
+    border-radius: 50%;
+    background-color: #007bff;
+    color: white;
+    font-size: 30px;
+    border: none;
+    cursor: pointer;
+    z-index: 99;
+    font-weight: 800;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    box-shadow: rgb(29, 44, 59) 5px 20px 30px -10px;
+}
+
+.audio-play-button {
+    background-color: #006adb;
+    box-shadow: rgb(26, 40, 53) 5px 20px 30px -10px;
+}
+

@@ -5,9 +5,15 @@
   height: 100px;
   background-color: #f9f9f9;
   border-top: 1px solid #ddd;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 10px 0;
   background-image: url("../res/coca-cola-christmas.png");
   background-position: center;
@@ -24,4 +30,4 @@
   background-color: #fff;
   overflow-y: auto;
   background-color: #ddd;
-}
+}/*# sourceMappingURL=logs.css.map */
