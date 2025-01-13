@@ -325,6 +325,47 @@ button#create-line-btn:hover {
   background-color: #333333;
 }
 
+.triangle-input {
+  margin-top: 20px;
+  margin-top: 20px;
+}
+.triangle-input label {
+  font-size: 18px;
+  background-color: #1a1a1a;
+}
+.triangle-input input[type=text],
+.triangle-input input[type=color] {
+  all: unset;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 5px;
+  margin-top: 5px;
+}
+
+/* Stiluri pentru butonul de creare triunghi */
+button#create-triangle-btn {
+  color: white;
+  width: 250px;
+  margin-top: 30px;
+  margin-left: 20px;
+  border-radius: 8px;
+  border: 1px solid white;
+  padding: 0.6em 1.2em;
+  font-size: 0.85em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  -webkit-transition: background-color 0.25s;
+  transition: background-color 0.25s;
+  margin-left: 60px;
+  margin-bottom: 30px;
+  font-weight: 800;
+}
+button#create-triangle-btn:hover {
+  background-color: #333333;
+}
+
 .section1 {
   display: -webkit-box;
   display: -ms-flexbox;
