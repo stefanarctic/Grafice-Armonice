@@ -13,23 +13,15 @@
   cursor: pointer;
   z-index: 99;
   font-weight: 800;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-shadow: rgb(29, 44, 59) 5px 20px 30px -10px;
-          box-shadow: rgb(29, 44, 59) 5px 20px 30px -10px;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgb(29, 44, 59) 5px 20px 30px -10px;
 }
 
 .show-popup-button:hover {
   background-color: #006adb;
-  -webkit-box-shadow: rgb(26, 40, 53) 5px 20px 30px -10px;
-          box-shadow: rgb(26, 40, 53) 5px 20px 30px -10px;
+  box-shadow: rgb(26, 40, 53) 5px 20px 30px -10px;
 }
 
 .delete-popup-button {
@@ -47,31 +39,20 @@
   cursor: pointer;
   z-index: 99;
   font-weight: 800;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-shadow: rgb(29, 44, 59) 5px 20px 30px -10px;
-          box-shadow: rgb(29, 44, 59) 5px 20px 30px -10px;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgb(29, 44, 59) 5px 20px 30px -10px;
 }
 
 .delete-popup-button:hover {
   background-color: #006adb;
-  -webkit-box-shadow: rgb(26, 40, 53) 5px 20px 30px -10px;
-          box-shadow: rgb(26, 40, 53) 5px 20px 30px -10px;
+  box-shadow: rgb(26, 40, 53) 5px 20px 30px -10px;
 }
 
 .delete-point-line-popup {
   display: none;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   background-color: black;
   color: white;
   position: absolute;
@@ -79,18 +60,12 @@
   left: 50%;
   width: 30%;
   height: auto;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   border: 3.5px solid white;
 }
 .delete-point-line-popup .popup-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 20px;
   padding: 20px;
 }
@@ -98,13 +73,8 @@
   text-align: center;
 }
 .delete-point-line-popup .popup-content .section {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 10px;
 }
 .delete-point-line-popup .popup-content .section label {
@@ -133,10 +103,7 @@
 .create-point-popup {
   all: unset;
   display: none;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   overflow-y: auto;
   background-color: black;
   color: white;
@@ -145,26 +112,16 @@
   left: 50%;
   width: 25%;
   height: 60%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   display: none;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   background-color: black;
   border: 3.5px solid white;
 }
 .create-point-popup .popup-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 10px;
   width: 100%;
   height: 100%;
@@ -176,25 +133,15 @@
   text-align: center;
 }
 .create-point-popup .popup-content .data-input {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   padding-right: 30px;
   padding-left: 30px;
   height: 100%;
 }
 .create-point-popup .popup-content .data-input .section {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 15px;
 }
 .create-point-popup .popup-content .data-input .section label {
@@ -223,13 +170,8 @@
   height: 40px;
 }
 .create-point-popup .popup-content .data-input .section .date-section {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
   gap: 12px;
 }
 .create-point-popup .popup-content .data-input .section .date-section button#set-current-date-button {
@@ -242,7 +184,6 @@
   font-family: inherit;
   background-color: #1a1a1a;
   cursor: pointer;
-  -webkit-transition: background-color 0.25s;
   transition: background-color 0.25s;
 }
 .create-point-popup .popup-content .data-input .section .date-section button#set-current-date-button:hover {
@@ -262,7 +203,6 @@
   font-family: inherit;
   background-color: #1a1a1a;
   cursor: pointer;
-  -webkit-transition: background-color 0.25s;
   transition: background-color 0.25s;
   margin-left: 60px;
   margin-bottom: 30px;
@@ -315,7 +255,6 @@ button#create-line-btn {
   font-family: inherit;
   background-color: #1a1a1a;
   cursor: pointer;
-  -webkit-transition: background-color 0.25s;
   transition: background-color 0.25s;
   margin-left: 60px;
   margin-bottom: 30px;
@@ -327,19 +266,31 @@ button#create-line-btn:hover {
 
 .triangle-input {
   margin-top: 20px;
-  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 .triangle-input label {
   font-size: 18px;
-  background-color: #1a1a1a;
+  color: #fff;
+  margin-bottom: 5px;
 }
 .triangle-input input[type=text],
 .triangle-input input[type=color] {
   all: unset;
+  width: 200px;
   border: 1px solid white;
   border-radius: 5px;
   padding: 5px;
-  margin-top: 5px;
+  margin-bottom: 15px;
+  background-color: #333;
+  color: #fff;
+}
+.triangle-input input[type=text]::-moz-placeholder {
+  color: #aaa;
+}
+.triangle-input input[type=text]::placeholder {
+  color: #aaa;
 }
 
 /* Stiluri pentru butonul de creare triunghi */
@@ -347,33 +298,26 @@ button#create-triangle-btn {
   color: white;
   width: 250px;
   margin-top: 30px;
-  margin-left: 20px;
   border-radius: 8px;
   border: 1px solid white;
   padding: 0.6em 1.2em;
-  font-size: 0.85em;
-  font-weight: 500;
-  font-family: inherit;
+  font-size: 1em;
+  font-weight: 600;
   background-color: #1a1a1a;
   cursor: pointer;
-  -webkit-transition: background-color 0.25s;
-  transition: background-color 0.25s;
-  margin-left: 60px;
-  margin-bottom: 30px;
-  font-weight: 800;
+  transition: background-color 0.25s ease-in-out;
 }
 button#create-triangle-btn:hover {
-  background-color: #333333;
+  background-color: #333;
+}
+button#create-triangle-btn:active {
+  background-color: #555;
+  transform: scale(0.98);
 }
 
 .section1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 15px;
 }
 .section1 label {
@@ -402,13 +346,8 @@ button#create-triangle-btn:hover {
   height: 40px;
 }
 .section1 .date-section {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
   gap: 12px;
 }
 .section1 .date-section button#set-current-date-button {
@@ -421,7 +360,6 @@ button#create-triangle-btn:hover {
   font-family: inherit;
   background-color: #1a1a1a;
   cursor: pointer;
-  -webkit-transition: background-color 0.25s;
   transition: background-color 0.25s;
 }
 .section1 .date-section button#set-current-date-button:hover {
