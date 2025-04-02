@@ -1,18 +1,18 @@
 // Configurație globală
 let currentScale = 1; // Nivelul curent de zoom
-let currentX = 0, currentY = 0; // Poziția curentă pentru translație
+let zoomX = 0, zoomY = 0; // Poziția curentă pentru translație
 const zoomStep = 0.1; // Pas pentru zoom
 const minZoom = 0.1; // Zoom minim
 const maxZoom = 3; // Zoom maxim
 
 // Selectarea elementului SVG și butoanelor
-const svg = document.querySelector("svg");
+// const svg = document.querySelector("svg");
 const zoomInButton = document.getElementById("zoom-in");
 const zoomOutButton = document.getElementById("zoom-out");
 
 // Funcție pentru aplicarea transformării (zoom + translație)
 function applyTransform() {
-  svg.style.transform = `translate(${currentX}px, ${currentY}px) scale(${currentScale})`;
+  svg.style.transform = `translate(${zoomX}px, ${zoomY}px) scale(${currentScale})`;
 }
 
 // Funcție pentru zoom in
@@ -68,8 +68,8 @@ svg.addEventListener("mousemove", function (event) {
     const dx = event.clientX - startX;
     const dy = event.clientY - startY;
 
-    currentX += dx;
-    currentY += dy;
+    zoomX += dx;
+    zoomY += dy;
 
     applyTransform();
 

@@ -7,7 +7,7 @@ const closePopupButton = document.getElementById('close-popup-btn');
 const createPointButton = document.getElementById('create-point-btn');
 const omega1Input = document.getElementById('omega1Input');
 const omega2Input = document.getElementById('omega2Input');
-const amplitudine=document.getElementById('amplitudineInput');
+const amplitudine = document.getElementById('amplitudineInput');
 const letterInput = document.getElementById('letterInput');
 const timeInput = document.getElementById('timeInput');
 const colorInput = document.getElementById('colorInput');
@@ -31,7 +31,7 @@ const hideDialog = () => {
 const resetValues = () => {
     letterInput.value = '';
     timeInput.value = '';
-    colorInput.value = '';
+    colorInput.value = '#000000';
 }
 
 /*
@@ -85,3 +85,31 @@ const createPoint = () => {
 showPopupButton.onclick = openDialog;
 closePopupButton.onclick = hideDialog;
 createPointButton.onclick = createPoint;
+
+window.onload = () => {
+    hideDialog();
+}
+
+overlay.onclick = e => {
+    hideDialog();
+}
+
+document.addEventListener('keydown', e => {
+    if(isDialogOpen && e.key === 'Escape')
+        hideDialog();
+})
+
+// document.addEventListener('click', e => {
+//     alert('Clicked on body');
+//     alert(`Dialog open: ${isDialogOpen}`);
+//     if(isDialogOpen === true && e.target !== createPointButton && !createPointButton.contains(e.target))
+//     {
+//         alert('Checking if clicked inside');
+//         const clickedInside = popup === e.target || popup.contains(e.target);
+//         if(!clickedInside)
+//         {
+//             alert('Clicked inside');
+//             hideDialog();
+//         }
+//     }
+// })

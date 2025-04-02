@@ -24,6 +24,13 @@
   box-shadow: rgb(26, 40, 53) 5px 20px 30px -10px;
 }
 
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+}
+
 .create-point-popup {
   all: unset;
   background-color: black;
