@@ -34,12 +34,6 @@ const resetValues = () => {
     colorInput.value = '#000000';
 }
 
-/*
-    𝛚1 = 3;
-    𝛚2 = 6;
-    φ0 = 90;
-*/
-
 const createPoint = () => {
     const letter = letterInput.value;
     const time = timeInput.value;
@@ -49,9 +43,6 @@ const createPoint = () => {
     const color = colorInput.value;
     hideDialog();
 
-    //const A = 10;
-    //const w1 = 3;
-    //const w2 = 6;
     const f0 = 90;
     const t = time;
     const w1 = omega1;
@@ -66,20 +57,11 @@ const createPoint = () => {
         .style("fill", color);
     
     gridGroup.append("text")
-        .attr("x", x * minorSpacing - 10) // Lângă punct pe axa X
-        .attr("y", -y * minorSpacing -10 ) // Deasupra punctului pe axa Y
-        .text(`D (${x.toFixed(2)}, ${y.toFixed(2)})`) // Numele punctului cu coordonate formatate
+        .attr("x", x * minorSpacing - 10)
+        .attr("y", -y * minorSpacing -10)
+        .text(`D (${x.toFixed(2)}, ${y.toFixed(2)})`)
         .style("font-size", "12px")
         .style("fill", color);
-
-    // const lastPoint = points[points.length - 1];
-    // gridGroup.append("line")
-    //     .attr("x1", lastPoint.x * minorSpacing) // Coordonata X a punctului A
-    //     .attr("y1", -lastPoint.y * minorSpacing) // Coordonata Y a punctului A
-    //     .attr("x2", x * minorSpacing) // Coordonata X a punctului B
-    //     .attr("y2", -y * minorSpacing) // Coordonata Y a punctului B
-    //     .attr("stroke", color) // Culoarea liniei
-    //     .attr("stroke-width", 2); // Grosimea liniei
 }
 
 showPopupButton.onclick = openDialog;
@@ -98,18 +80,3 @@ document.addEventListener('keydown', e => {
     if(isDialogOpen && e.key === 'Escape')
         hideDialog();
 })
-
-// document.addEventListener('click', e => {
-//     alert('Clicked on body');
-//     alert(`Dialog open: ${isDialogOpen}`);
-//     if(isDialogOpen === true && e.target !== createPointButton && !createPointButton.contains(e.target))
-//     {
-//         alert('Checking if clicked inside');
-//         const clickedInside = popup === e.target || popup.contains(e.target);
-//         if(!clickedInside)
-//         {
-//             alert('Clicked inside');
-//             hideDialog();
-//         }
-//     }
-// })
