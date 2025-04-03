@@ -37,9 +37,9 @@ function dragEnd() {
 }
 
 // Disable dragging for the time being
-// svg.on("mousedown", dragStart)
-//    .on("mousemove", dragMove)
-//    .on("mouseup", dragEnd)
-//    .on("mouseleave", dragEnd);
+svg.on("mousedown", dragStart)
+   .on("mousemove", dragMove)
+   .on("mouseup", dragEnd)
+   .on("mouseleave", dragEnd);
 
-// gridGroup.attr("transform", `translate(${window.innerWidth / 2}, ${window.innerHeight / 2})`);
+gridGroup.attr("transform", `translate(${window.innerWidth / 2}, ${window.innerHeight / 2})`);

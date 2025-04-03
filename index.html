@@ -14,9 +14,9 @@
 </head>
 
 <body>
-  <div id="log-container">
+  <!-- <div id="log-container">
     <textarea id="log" readonly></textarea>
-  </div>
+  </div> -->
   <!-- <div id="controls">
         <button id="zoom-in"><span>+</span></button>
         <button id="zoom-out"><span>-</span></button>
@@ -73,7 +73,7 @@
           <div class="section">
             <label for="timeInterval">Intervalul de timp:</label>
             <div id="timeInterval">
-              [ <input type="number" min="0" max="10000" id="interval1Input" class="intervalInput" autocomplete="off" placeholder="t0"> , <input type="number" min="0"
+              [ <input type="number" min="-10000" max="10000" id="interval1Input" class="intervalInput" autocomplete="off" placeholder="t0"> , <input type="number" min="-10000"
                 max="10000" id="interval2Input" class="intervalInput" autocomplete="off" placeholder="t"> ]
             </div>
             <label>Ecuatia functiei:</label>
@@ -104,11 +104,12 @@
 
   <script src="https://d3js.org/d3.v7.min.js"></script>
   <script src="script.js"></script>
-  <script src="dragging.js"></script>
+  <!-- <script src="dragging.js"></script> -->
   <!-- <script src="zoom.js"></script> -->
-  <script src="logs.js"></script>
+  <!-- <script src="logs.js"></script> -->
   <!-- <script src="createPoint.js"></script> -->
   <script src="generatePoints.js"></script>
+  <script src="zoom2.js"></script>
   <!-- <script src="snowflakes.js"></script> -->
 </body>
 

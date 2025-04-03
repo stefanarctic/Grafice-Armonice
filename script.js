@@ -1,3 +1,4 @@
+
 const majorSpacing = 50;
 const minorSpacing = 10;
 const gridExtent = 100000;
@@ -7,8 +8,8 @@ let currentY = 0;
 
 const svg = d3.select("body")
   .append("svg")
-  .attr("width", "100%")
-  .attr("height", "100%")
+  .attr("width", "1000%")
+  .attr("height", "1000%")
   .style("background-color", "#E0E0E0");
 
 const gridGroup = svg.append("g")
