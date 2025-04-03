@@ -8,10 +8,13 @@ const generatePointsButton = document.getElementById('generate-points-btn');
 const interval1Input = document.getElementById('interval1Input');
 const interval2Input = document.getElementById('interval2Input');
 const intervalInputs = document.getElementsByClassName('intervalInput');
-const omegaInput = document.getElementById('omegaInput');
 const amplitudeInput = document.getElementById('amplitudeInput');
+const omegaInput = document.getElementById('omegaInput');
+const phaseInput = document.getElementById('phaseInput');
+
 const letterInput = document.getElementById('letterInput');
 const timeInput = document.getElementById('timeInput');
+
 const colorInput = document.getElementById('colorInput');
 
 const openDialog = () => {
@@ -39,6 +42,7 @@ const resetValues = () => {
     interval2Input.value = '';
     amplitudeInput.value = '';
     omegaInput.value = '';
+    phaseInput.value = '';
     colorInput.value = '#ff0000';
 }
 
@@ -118,17 +122,23 @@ const validateValues = () => {
 
     if(amplitudeInput.value === '')
     {
-        alert(`Te rog sa completezi toate campurile`);
         amplitudeInput.style.borderColor = 'red';
-        return false;
+        ok = false;
     }
     if(omegaInput.value === '')
     {
-        alert(`Te rog sa completezi toate campurile`);
         omegaInput.style.borderColor = 'red';
-        return false;
+        ok = false;
+    }
+    if(phaseInput.value === '')
+    {
+        phaseInput.style.borderColor = 'red';
+        ok = false;
     }
 
+    if(amplitudeInput.value === '' || omegaInput.value === '' || phaseInput.value === '')
+        alert(`Te rog sa completezi toate campurile`);
+    
     return ok;
 }
 
